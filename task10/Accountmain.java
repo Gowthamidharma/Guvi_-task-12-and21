@@ -13,11 +13,10 @@ public class Accountmain {
 		int withdraw=sc.nextInt();
 		System.out.println("Deposit Amount= ");
 		int deposit=sc.nextInt();
+		
 		Account objAccount= new Account(withdraw,deposit);		
 		System.out.println("The Balance after withdraw  " + objAccount.getwithdraw());		
-		System.out.println("The Closing balance after deposit  " + objAccount.getdeposit());
-		
-		
+		System.out.println("The Closing balance after deposit  " + objAccount.getdeposit());		
 		System.out.println("No Args constructor");
 		
 		Account objAccount2 = new Account();

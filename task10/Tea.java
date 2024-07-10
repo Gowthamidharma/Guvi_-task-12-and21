@@ -2,16 +2,46 @@ package task10;
 
 public class Tea {
 	
-	public void PrepareTea() {
-		System.out.println("Basic Tea with Leaves and Water");
+	String tulsi;
+	String tealeave;
+	String honey;
+	String ginger;	
+	String water;
+	String milk;
+	String sugar;
+	
+	
+	
+	
+	
+	
+	public void PrepareTea(String tealeave,String water,String honey) {
+		String basictea =tealeave+water;
+		System.out.println("This is Basic Tea with " +basictea + Addmilk("Milk"));// calling milk method
+		
+		
+		
 		
 	}
 	
-	public void Addmilk() {
-		System.out.println("Add milk to Basic Tea");
+	// method overload
+	  public void PrepareTea(String tealeave,String water) {
+		  String basictea1=tealeave+water;
+	  System.out.println("This is Basic Tea with " +basictea1  + AddSugar("Sugar")); // calling sugar method
+	  
+	  
+	  }
+	 
+	public String  Addmilk(String milk) {
+		this.milk= milk;
+		
+		return milk;
+		
 	}
 
-	public void AddSugar() {
-		System.out.println("Add Sugar to Basic Tea");
+	public String AddSugar(String sugar) {
+		this.sugar=sugar;
+		
+		return sugar;
 	}
 }
